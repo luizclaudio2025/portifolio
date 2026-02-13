@@ -1,118 +1,144 @@
+/* Seleciona TODOS os elementos da página */
 *{
-    padding: 0;
-    margin: 0;
-    font-weight: 400;
+    padding: 0; /* Remove espaçamento interno padrão */
+    margin: 0; /* Remove espaçamento externo padrão */
+    font-weight: 400; /* Define peso normal da fonte */
 }
 
+/* Corpo da página */
 body{
-    color: aliceblue;
-    background-color: #171414;
-    font-family: "Montserrat", sans-serif;
-    
+    color: aliceblue; /* Cor padrão do texto */
+    background-color: #171414; /* Cor de fundo da página */
+    font-family: "Montserrat", sans-serif; /* Fonte principal */
 }
+
+/* Cabeçalho */
 header{
-    display: flex;
-    align-items: center;
-    padding-left: 35px;
-    height: 100px;
-    background-color: rgba(13, 3, 89, 0.56);
-
+    display: flex; /* Ativa Flexbox */
+    align-items: center; /* Centraliza verticalmente */
+    padding-left: 35px; /* Espaço interno à esquerda */
+    height: 100px; /* Altura fixa do header */
+    background-color: rgba(13, 3, 89, 0.56); /* Cor com transparência */
 }
 
+/* Título dentro do header */
 header h3{
-    font-size: 48px;
+    font-size: 48px; /* Tamanho grande do texto */
 }
 
+/* Todas as sections */
 section{
-    height: 100vh;
+    height: 100vh; /* Altura total da tela */
 }
+
+/* Primeira seção */
 .section-1{
-    height: calc(100vh - 100px);
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    height: calc(100vh - 100px); /* Altura da tela menos o header */
+    position: relative; /* Permite posicionamento absoluto interno */
+    display: flex; /* Ativa Flexbox */
+    align-items: flex-end; /* Alinha conteúdo na parte inferior */
+    justify-content: center; /* Centraliza horizontalmente */
 }
 
+/* Article dentro da section-1 */
 .section-1 article{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    margin-left: 100px;
-    margin-bottom: 100px;
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Organiza em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: flex-end; /* Alinha conteúdo para baixo */
+    margin-left: 100px; /* Espaço externo à esquerda */
+    margin-bottom: 100px; /* Espaço externo abaixo */
 }
 
+/* h2 dentro do article */
 .section-1 article h2{
-    margin-bottom: 180px;
-    margin-left: 80px;
+    margin-bottom: 180px; /* Espaço abaixo */
+    margin-left: 80px; /* Espaço à esquerda */
 }
+
+/* Div lateral da section */
 .section-1 div{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    align-items: center;
-    position: absolute;
-    right: 30px;
-    top: 25%;
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Organiza em coluna */
+    gap: 40px; /* Espaço entre elementos */
+    align-items: center; /* Centraliza horizontalmente */
+    position: absolute; /* Posicionamento absoluto */
+    right: 30px; /* Distância da direita */
+    top: 25%; /* Distância do topo */
 }
+
+/* Título principal */
 .section-1 h1{
-    font-size: 96px;
+    font-size: 96px; /* Texto bem grande */
 }
 
+/* Subtítulo */
 .section-1 h2{
-    font-size: 36px;
+    font-size: 36px; /* Tamanho médio */
 }
 
+/* h3 */
 .section-1 h3{
-        margin-bottom: 130px;
+    margin-bottom: 130px; /* Espaço abaixo */
 }
+
+/* Linha horizontal dentro da div */
 .section-1 div hr{
-    width: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
+    width: 100%; /* Ocupa toda largura */
+    padding-left: 40px; /* Espaço interno à esquerda */
+    padding-right: 40px; /* Espaço interno à direita */
 }
 
-.section-1 hr:not(.rotate){ /*estou negando a class rotate*/
-    position: absolute;
-    height: 90%;
-    z-index: -1;
-    opacity: 0.1;
-    margin-bottom: 40px;
+/* Seleciona hr que NÃO tem classe rotate */
+.section-1 hr:not(.rotate){
+    position: absolute; /* Fica fixo na section */
+    height: 90%; /* Altura grande */
+    z-index: -1; /* Fica atrás dos elementos */
+    opacity: 0.1; /* Transparência */
+    margin-bottom: 40px; /* Espaço abaixo */
 }
 
+/* Parágrafo */
 .section-1 p{
-    margin-bottom: 30px;
-    position: absolute;
-    left: 70px;
+    margin-bottom: 30px; /* Espaço abaixo */
+    position: absolute; /* Posicionamento fixo */
+    left: 70px; /* Distância da esquerda */
 }
+
+/* Linhas verticais posicionadas */
 .hr-1{
-    left: 25%;
+    left: 25%; /* 25% da largura */
 }
 
 .hr-2{
-    left: 45%;
+    left: 45%; /* 45% da largura */
 }
+
 .hr-3{
-    left: 65%;
+    left: 65%; /* 65% da largura */
 }
 
 .hr-4{
-    left: 85%;
+    left: 85%; /* 85% da largura */
 }
 
-
+/* Classe que gira elemento */
 .rotate{
-    transform: rotate(90deg);
+    transform: rotate(90deg); /* Rotaciona 90 graus */
 }
 
+/* Classe auxiliar */
 .a-1{
-    margin-top: 100px;
+    margin-top: 100px; /* Espaço acima */
 }
+
+/* Imagem dentro da section */
 .section-1 img{
-    width: 35px;
-    right: 35px;
+    width: 35px; /* Define largura */
+    right: 35px; /* Distância da direita (precisa de position para funcionar) */
 }
+
+/* Texto forte (negrito) */
 strong{
-    font-weight: bold;
+    font-weight: bold; /* Deixa em negrito */
 }
