@@ -18,7 +18,7 @@ header{
     align-items: center; /* Centraliza verticalmente */
     padding-left: 35px; /* Espaço interno à esquerda */
     height: 100px; /* Altura fixa do header */
-    background-color: rgba(13, 3, 89, 0.56); /* Cor com transparência */
+    background-color: rgba(1, 0, 7, 0.56); /* Cor com transparência */
 }
 
 /* Título dentro do header */
